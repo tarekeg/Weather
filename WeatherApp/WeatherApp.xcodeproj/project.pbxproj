@@ -14,7 +14,23 @@
 		F56E9C7B2891B1D700DA164D /* WeatherApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F56E9C792891B1D700DA164D /* WeatherApp.xcdatamodeld */; };
 		F56E9C7D2891B1D800DA164D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F56E9C7C2891B1D800DA164D /* Assets.xcassets */; };
 		F56E9C802891B1D800DA164D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F56E9C7E2891B1D800DA164D /* LaunchScreen.storyboard */; };
+		F56E9C8B2891B54200DA164D /* WeatherService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F56E9C8A2891B54200DA164D /* WeatherService.framework */; };
+		F56E9C8C2891B54200DA164D /* WeatherService.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F56E9C8A2891B54200DA164D /* WeatherService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F56E9C8D2891B54200DA164D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F56E9C8C2891B54200DA164D /* WeatherService.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		F56E9C6D2891B1D700DA164D /* WeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,6 +42,7 @@
 		F56E9C7C2891B1D800DA164D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F56E9C7F2891B1D800DA164D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F56E9C812891B1D800DA164D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F56E9C8A2891B54200DA164D /* WeatherService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WeatherService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F56E9C8B2891B54200DA164D /* WeatherService.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +62,7 @@
 			children = (
 				F56E9C6F2891B1D700DA164D /* WeatherApp */,
 				F56E9C6E2891B1D700DA164D /* Products */,
+				F56E9C892891B54200DA164D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +89,14 @@
 			path = WeatherApp;
 			sourceTree = "<group>";
 		};
+		F56E9C892891B54200DA164D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F56E9C8A2891B54200DA164D /* WeatherService.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -80,6 +107,7 @@
 				F56E9C692891B1D700DA164D /* Sources */,
 				F56E9C6A2891B1D700DA164D /* Frameworks */,
 				F56E9C6B2891B1D700DA164D /* Resources */,
+				F56E9C8D2891B54200DA164D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

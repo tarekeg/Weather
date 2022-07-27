@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F56E9C882891B40D00DA164D /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56E9C872891B40D00DA164D /* WeatherService.swift */; };
 		F58249C92891B13A004F851D /* WeatherService.docc in Sources */ = {isa = PBXBuildFile; fileRef = F58249C82891B13A004F851D /* WeatherService.docc */; };
 		F58249CF2891B13A004F851D /* WeatherService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F58249C42891B13A004F851D /* WeatherService.framework */; };
 		F58249D42891B13A004F851D /* WeatherServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58249D32891B13A004F851D /* WeatherServiceTests.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F56E9C872891B40D00DA164D /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
 		F58249C42891B13A004F851D /* WeatherService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WeatherService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F58249C72891B13A004F851D /* WeatherService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeatherService.h; sourceTree = "<group>"; };
 		F58249C82891B13A004F851D /* WeatherService.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = WeatherService.docc; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 			children = (
 				F58249C72891B13A004F851D /* WeatherService.h */,
 				F58249C82891B13A004F851D /* WeatherService.docc */,
+				F56E9C872891B40D00DA164D /* WeatherService.swift */,
 			);
 			path = WeatherService;
 			sourceTree = "<group>";
@@ -194,6 +197,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F56E9C882891B40D00DA164D /* WeatherService.swift in Sources */,
 				F58249C92891B13A004F851D /* WeatherService.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -396,6 +400,7 @@
 		F58249DC2891B13A004F851D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = LATFQ2CT64;
@@ -412,6 +417,7 @@
 		F58249DD2891B13A004F851D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = LATFQ2CT64;

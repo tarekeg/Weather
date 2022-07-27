@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+
+public class WeatherService {
+    public static var appId: String?
+    public class func initialize(withAppId appId: String) {
+        self.appId = appId
+    }
+}
