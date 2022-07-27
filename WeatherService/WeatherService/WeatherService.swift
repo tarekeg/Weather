@@ -10,7 +10,18 @@ import Foundation
 
 public class WeatherService {
     public static var appId: String?
+    
+    public static let instance = WeatherService()
+    
+    private init() {
+    }
+    
     public class func initialize(withAppId appId: String) {
         self.appId = appId
     }
+    
+    
+    
+    
+    
 }
