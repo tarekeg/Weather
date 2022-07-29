@@ -1,13 +1,16 @@
 # ``WeatherService``
 
-<!--@START_MENU_TOKEN@-->Summary<!--@END_MENU_TOKEN@-->
+The WeatherService Framework enhance a function that return weather data of particular coordinates
 
 ## Overview
 
-<!--@START_MENU_TOKEN@-->Text<!--@END_MENU_TOKEN@-->
+With the WeatherService you will need to get the appId from openweathermap after creating an account
+then you will need to set in the appdelagate of your project
 
-## Topics
+`WeatherService.initialize(withAppId: "xxxxxxxxxxxxxxxxxxxxxxxxx")`
 
-### <!--@START_MENU_TOKEN@-->Group<!--@END_MENU_TOKEN@-->
+to get your weatherData you will simply call the function WeatherService.intance.currentWeather
 
-- <!--@START_MENU_TOKEN@-->``Symbol``<!--@END_MENU_TOKEN@-->
+
+
+
