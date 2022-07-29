@@ -7,14 +7,15 @@
 
 import UIKit
 import CoreData
+import WeatherService
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        WeatherService.initialize(withAppId: "c242ebb29379467369e6903ca9d5d832")
         return true
     }
 
