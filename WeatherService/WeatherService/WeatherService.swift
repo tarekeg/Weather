@@ -20,6 +20,14 @@ public class WeatherService {
         self.appId = appId
     }
     
+    public func currentWeather(coord: (latitude: Double, longitude: Double),completion: @escaping (WeatherData?, Error?) -> ()) {
+        NetworkManager.instance.get(from: RequestBuilder()
+            .setLatitude(coord.latitude)
+            .setLongitude(coord.longitude)
+            .setAppId(appId: WeatherService.appId)
+            .build(),completion: completion)
+    }
+    
     
     
     
