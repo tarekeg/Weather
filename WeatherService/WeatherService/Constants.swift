@@ -11,7 +11,7 @@ internal class Constants {
 
     internal class Endpoints {
         
-        static let API_URL = "http://api.openweathermap.org/data/2.5"
+        static let API_URL = "https://api.openweathermap.org/data/2.5/onecall?"
 
         private init() {}
     }
